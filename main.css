@@ -81,6 +81,10 @@ header {
     max-width: 550px;
   }
 
+  :root {
+    --animate-duration: 2s;
+  }
+
   @keyframes rotation {
     from {
         transform: rotate(0deg);

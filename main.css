@@ -160,10 +160,12 @@ header {
 
 .features__feedback{
   display: flex;
+  justify-content: space-between;
 }
 
 .features__feedback-left{
   margin-left: 10px;
+
 }
 
 .features__feedback-left h2{
@@ -178,7 +180,7 @@ header {
 
 .features__feedback-right{
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .features__box{
@@ -187,10 +189,10 @@ header {
   border-radius: 25px;
 }
 
-/* .features__box p{
+.features__box p{
   font-size: 18px;
   line-height: 26px;
-} */
+}
 
 .features__box h3{
   margin-top: 0;

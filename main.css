@@ -122,7 +122,7 @@ header {
   border-radius: 5px;
 }
 
-.card__logo {
+  .card__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,13 +132,13 @@ header {
   font-weight: 700;
   background-color: #eaeff9;
   border-radius: 50%;
-}
+  }
 
-.card__logo_color-one{
+  .card__logo_color-one{
   color: #ffb406;
-}
+  }
 
-.card__logo_color-two{
+  .card__logo_color-two{
   color: #ad1714;
 }
 
@@ -161,6 +161,7 @@ header {
 .features__feedback{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .features__feedback-left{
@@ -180,7 +181,6 @@ header {
 
 .features__feedback-right{
   display: flex;
-  align-items: stretch;
 }
 
 .features__box{
@@ -213,6 +213,57 @@ header {
 
 .stars{
   color: #ff7039;
+}
+
+.promo{
+  display: flex;
+}
+
+.promo__image{
+  background-image: url("img/promo.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.promo__right{
+  background-color: #dd5f26;
+  padding: 160px 60px;
+}
+
+.promo__card{
+  background-color: #fff;
+  padding: 30px 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+.promo__card p{
+  opacity: 0.8;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  color: #ec6b29;
+  margin-right: 10px;
+  vertical-align: center;
+}
+
+.promo__container button{
+  background: #107b1c;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+}
+
+.promo__card_i{
+  font-size: 15px;
+  margin-left: 5px;
 }
 
   .form__container {
@@ -369,6 +420,19 @@ header {
       margin-bottom: 30px;
     }
     
+    .promo{
+      flex-direction: column-reverse;
+    }
+
+    .promo__image{
+      width: 100%;
+      height: 500px;
+    }
+
+    .promo__right{
+      padding: 50px 10px;
+    }
+    
     .form {
       padding: 115px 20px;
     }
@@ -440,6 +504,19 @@ header {
       margin-bottom: 30px;
     }
 
+    .promo{
+      flex-direction: column-reverse;
+    }
+
+    .promo__image{
+      width: 100%;
+      height: 500px;
+    }
+
+    .promo__right{
+      padding: 50px 10px;
+    }
+    
     .form {
       padding: 50px 10px;
     }

@@ -245,12 +245,15 @@ header {
   opacity: 0.8;
 }
 
-.circle {
+.promo__card p::before{
+  display: inline-block;
+  content: " ";
   width: 10px;
   height: 10px;
-  color: #ec6b29;
+  background-color: #ec6b29;
   margin-right: 10px;
-  vertical-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 .promo__container button{

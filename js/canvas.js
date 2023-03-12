@@ -21,7 +21,6 @@ class Bubble {
 
     init() {
         this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
-        console.log(this.color);
         this.size = generateDecimalBetween(1, 3);
         this.alpha = generateDecimalBetween(5, 10) / 10;
         this.translateX = generateDecimalBetween(0, this.canvasWidth);
@@ -86,4 +85,3 @@ class CanvasBackground {
 
 const canvas = new CanvasBackground("orb-canvas");
 canvas.start();
-console.log(canvas.ctx.fillStyle)

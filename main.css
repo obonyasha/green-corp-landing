@@ -9,10 +9,19 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     background-color: #fff;
+    background: transparent;
     z-index: 1;
+    transition: 0.25s ease;
+  }
+
+  .header__scrolled{
+    background-color:#fff;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
   }
 
   a {
@@ -60,7 +69,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px; 
     background: url('img/back.png') no-repeat;
     background-position: center;
@@ -379,7 +388,7 @@ header {
 
   @media (max-width: 1024px) {
     .about {
-      padding: 115px 20px;
+      padding: 200px 20px;
     }
 
     .about h1 {
@@ -441,7 +450,7 @@ header {
     }
 
     .promo__right{
-      padding: 50px 10px;
+      padding: 100px 10px;
     }
     
     .form {
@@ -464,7 +473,7 @@ header {
 
     .about {
       flex-direction: column-reverse;
-      padding: 50px 10px;
+      padding: 100px 10px;
     }
 
     .about h1 {
